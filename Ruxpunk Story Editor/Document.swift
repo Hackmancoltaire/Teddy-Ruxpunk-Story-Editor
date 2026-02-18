@@ -7,16 +7,16 @@
 //
 
 import Cocoa
-import AudioKit
+import AVFoundation
 
 class Document: NSDocument {
-	
-	var file: AKAudioFile!
+
+	var file: AVAudioFile!
 
 	var viewController: ViewController? {
 		return windowControllers[0].contentViewController as? ViewController
 	}
-	
+
 	override init() {
 		super.init()
 
@@ -33,7 +33,7 @@ class Document: NSDocument {
 		let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Document Window Controller")) as! NSWindowController
 
 		self.addWindowController(windowController)
-		
+
 		if ((self.file) != nil) {
 			// If we opened a file then update the view
 			self.viewController!.updateView()
@@ -47,11 +47,16 @@ class Document: NSDocument {
 	}
 
 	override func read(from data: Data, ofType typeName: String) throws {
-		self.file = try AKAudioFile(forReading: fileURL!)
-		
+		NSLog(fileURL!.path)
+
+		do {
+			self.file = try AVAudioFile(forReading: fileURL!)
+		} catch {
+			NSLog("WHAT?!")
+		}
+
 //		NSLog("ElementCount: %i", file.floatChannelData?[1].count ?? 0)
 	}
 
 
 }
-

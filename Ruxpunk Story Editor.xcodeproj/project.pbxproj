@@ -12,36 +12,12 @@
 		895CBF3921DC7E3F00A95F1B /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CBF3821DC7E3F00A95F1B /* Document.swift */; };
 		895CBF3B21DC7E4000A95F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895CBF3A21DC7E4000A95F1B /* Assets.xcassets */; };
 		895CBF3E21DC7E4000A95F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895CBF3C21DC7E4000A95F1B /* Main.storyboard */; };
-		895CBF4A21DC7E4000A95F1B /* Ruxpunk_Story_EditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CBF4921DC7E4000A95F1B /* Ruxpunk_Story_EditorTests.swift */; };
-		895CBF5521DC7E4000A95F1B /* Ruxpunk_Story_EditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CBF5421DC7E4000A95F1B /* Ruxpunk_Story_EditorUITests.swift */; };
-		895CBF7521DC82CE00A95F1B /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895CBF7321DC82CE00A95F1B /* AudioKitUI.framework */; };
-		895CBF7621DC82CE00A95F1B /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895CBF7321DC82CE00A95F1B /* AudioKitUI.framework */; };
-		895CBF7721DC82CE00A95F1B /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895CBF7321DC82CE00A95F1B /* AudioKitUI.framework */; };
-		895CBF7821DC82CE00A95F1B /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895CBF7421DC82CE00A95F1B /* AudioKit.framework */; };
-		895CBF7921DC82CE00A95F1B /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895CBF7421DC82CE00A95F1B /* AudioKit.framework */; };
-		895CBF7A21DC82CE00A95F1B /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895CBF7421DC82CE00A95F1B /* AudioKit.framework */; };
 		896D6F2921DED20F005BB862 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D6F2821DED20F005BB862 /* WindowController.swift */; };
 		89CA1EA721DF17F800A9C205 /* Face.scn in Resources */ = {isa = PBXBuildFile; fileRef = 89CA1EA621DF17F800A9C205 /* Face.scn */; };
 		89CA1EA921DF192C00A9C205 /* TeddyEye.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CA1EA821DF192C00A9C205 /* TeddyEye.png */; };
 		89CA1EAB21DF445400A9C205 /* CustomTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CA1EAA21DF445400A9C205 /* CustomTap.swift */; };
+		89WF000021DF500000000001 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89WF000021DF500000000002 /* WaveformView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		895CBF4621DC7E4000A95F1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 895CBF2921DC7E3F00A95F1B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 895CBF3021DC7E3F00A95F1B;
-			remoteInfo = "Ruxpunk Story Editor";
-		};
-		895CBF5121DC7E4000A95F1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 895CBF2921DC7E3F00A95F1B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 895CBF3021DC7E3F00A95F1B;
-			remoteInfo = "Ruxpunk Story Editor";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		895CBF3121DC7E3F00A95F1B /* Ruxpunk Story Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruxpunk Story Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,18 +28,15 @@
 		895CBF3D21DC7E4000A95F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		895CBF3F21DC7E4000A95F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		895CBF4021DC7E4000A95F1B /* Ruxpunk_Story_Editor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ruxpunk_Story_Editor.entitlements; sourceTree = "<group>"; };
-		895CBF4521DC7E4000A95F1B /* Ruxpunk Story EditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ruxpunk Story EditorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895CBF4921DC7E4000A95F1B /* Ruxpunk_Story_EditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ruxpunk_Story_EditorTests.swift; sourceTree = "<group>"; };
 		895CBF4B21DC7E4000A95F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		895CBF5021DC7E4000A95F1B /* Ruxpunk Story EditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ruxpunk Story EditorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895CBF5421DC7E4000A95F1B /* Ruxpunk_Story_EditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ruxpunk_Story_EditorUITests.swift; sourceTree = "<group>"; };
 		895CBF5621DC7E4000A95F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		895CBF7321DC82CE00A95F1B /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKitUI.framework; sourceTree = "<group>"; };
-		895CBF7421DC82CE00A95F1B /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		896D6F2821DED20F005BB862 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		89CA1EA621DF17F800A9C205 /* Face.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Face.scn; sourceTree = "<group>"; };
 		89CA1EA821DF192C00A9C205 /* TeddyEye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TeddyEye.png; sourceTree = "<group>"; };
 		89CA1EAA21DF445400A9C205 /* CustomTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTap.swift; sourceTree = "<group>"; };
+		89WF000021DF500000000002 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,26 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895CBF7821DC82CE00A95F1B /* AudioKit.framework in Frameworks */,
-				895CBF7521DC82CE00A95F1B /* AudioKitUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		895CBF4221DC7E4000A95F1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				895CBF7921DC82CE00A95F1B /* AudioKit.framework in Frameworks */,
-				895CBF7621DC82CE00A95F1B /* AudioKitUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		895CBF4D21DC7E4000A95F1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				895CBF7A21DC82CE00A95F1B /* AudioKit.framework in Frameworks */,
-				895CBF7721DC82CE00A95F1B /* AudioKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +57,6 @@
 				895CBF4821DC7E4000A95F1B /* Ruxpunk Story EditorTests */,
 				895CBF5321DC7E4000A95F1B /* Ruxpunk Story EditorUITests */,
 				895CBF3221DC7E3F00A95F1B /* Products */,
-				895CBF7421DC82CE00A95F1B /* AudioKit.framework */,
-				895CBF7321DC82CE00A95F1B /* AudioKitUI.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,8 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				895CBF3121DC7E3F00A95F1B /* Ruxpunk Story Editor.app */,
-				895CBF4521DC7E4000A95F1B /* Ruxpunk Story EditorTests.xctest */,
-				895CBF5021DC7E4000A95F1B /* Ruxpunk Story EditorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +79,7 @@
 				895CBF3A21DC7E4000A95F1B /* Assets.xcassets */,
 				895CBF3C21DC7E4000A95F1B /* Main.storyboard */,
 				89CA1EAA21DF445400A9C205 /* CustomTap.swift */,
+				89WF000021DF500000000002 /* WaveformView.swift */,
 				895CBF3F21DC7E4000A95F1B /* Info.plist */,
 				895CBF4021DC7E4000A95F1B /* Ruxpunk_Story_Editor.entitlements */,
 				89CA1EA821DF192C00A9C205 /* TeddyEye.png */,
@@ -171,45 +121,13 @@
 			dependencies = (
 			);
 			name = "Ruxpunk Story Editor";
+			packageProductDependencies = (
+				89AK000100000001 /* AudioKit */,
+				89AK000100000002 /* AudioKitEX */,
+			);
 			productName = "Ruxpunk Story Editor";
 			productReference = 895CBF3121DC7E3F00A95F1B /* Ruxpunk Story Editor.app */;
 			productType = "com.apple.product-type.application";
-		};
-		895CBF4421DC7E4000A95F1B /* Ruxpunk Story EditorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 895CBF5C21DC7E4000A95F1B /* Build configuration list for PBXNativeTarget "Ruxpunk Story EditorTests" */;
-			buildPhases = (
-				895CBF4121DC7E4000A95F1B /* Sources */,
-				895CBF4221DC7E4000A95F1B /* Frameworks */,
-				895CBF4321DC7E4000A95F1B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				895CBF4721DC7E4000A95F1B /* PBXTargetDependency */,
-			);
-			name = "Ruxpunk Story EditorTests";
-			productName = "Ruxpunk Story EditorTests";
-			productReference = 895CBF4521DC7E4000A95F1B /* Ruxpunk Story EditorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		895CBF4F21DC7E4000A95F1B /* Ruxpunk Story EditorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 895CBF5F21DC7E4000A95F1B /* Build configuration list for PBXNativeTarget "Ruxpunk Story EditorUITests" */;
-			buildPhases = (
-				895CBF4C21DC7E4000A95F1B /* Sources */,
-				895CBF4D21DC7E4000A95F1B /* Frameworks */,
-				895CBF4E21DC7E4000A95F1B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				895CBF5221DC7E4000A95F1B /* PBXTargetDependency */,
-			);
-			name = "Ruxpunk Story EditorUITests";
-			productName = "Ruxpunk Story EditorUITests";
-			productReference = 895CBF5021DC7E4000A95F1B /* Ruxpunk Story EditorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -218,7 +136,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Ramon Yvarra";
 				TargetAttributes = {
 					895CBF3021DC7E3F00A95F1B = {
@@ -228,14 +146,6 @@
 								enabled = 0;
 							};
 						};
-					};
-					895CBF4421DC7E4000A95F1B = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 895CBF3021DC7E3F00A95F1B;
-					};
-					895CBF4F21DC7E4000A95F1B = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 895CBF3021DC7E3F00A95F1B;
 					};
 				};
 			};
@@ -248,13 +158,15 @@
 				Base,
 			);
 			mainGroup = 895CBF2821DC7E3F00A95F1B;
+			packageReferences = (
+				89AK000000000001 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				89AK000000000002 /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+			);
 			productRefGroup = 895CBF3221DC7E3F00A95F1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				895CBF3021DC7E3F00A95F1B /* Ruxpunk Story Editor */,
-				895CBF4421DC7E4000A95F1B /* Ruxpunk Story EditorTests */,
-				895CBF4F21DC7E4000A95F1B /* Ruxpunk Story EditorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,20 +183,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		895CBF4321DC7E4000A95F1B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		895CBF4E21DC7E4000A95F1B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -297,39 +195,11 @@
 				89CA1EAB21DF445400A9C205 /* CustomTap.swift in Sources */,
 				895CBF3521DC7E3F00A95F1B /* AppDelegate.swift in Sources */,
 				895CBF3921DC7E3F00A95F1B /* Document.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		895CBF4121DC7E4000A95F1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				895CBF4A21DC7E4000A95F1B /* Ruxpunk_Story_EditorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		895CBF4C21DC7E4000A95F1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				895CBF5521DC7E4000A95F1B /* Ruxpunk_Story_EditorUITests.swift in Sources */,
+				89WF000021DF500000000001 /* WaveformView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		895CBF4721DC7E4000A95F1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 895CBF3021DC7E3F00A95F1B /* Ruxpunk Story Editor */;
-			targetProxy = 895CBF4621DC7E4000A95F1B /* PBXContainerItemProxy */;
-		};
-		895CBF5221DC7E4000A95F1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 895CBF3021DC7E3F00A95F1B /* Ruxpunk Story Editor */;
-			targetProxy = 895CBF5121DC7E4000A95F1B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		895CBF3C21DC7E4000A95F1B /* Main.storyboard */ = {
@@ -369,6 +239,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -394,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -430,6 +301,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -449,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -462,22 +334,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B78Q78C8RK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Ruxpunk Story Editor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				"OTHER_LDFLAGS[arch=*]" = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "cyberantics.Ruxpunk-Story-Editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -485,120 +355,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B78Q78C8RK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Ruxpunk Story Editor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				"OTHER_LDFLAGS[arch=*]" = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "cyberantics.Ruxpunk-Story-Editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		895CBF5D21DC7E4000A95F1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B78Q78C8RK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Ruxpunk Story EditorTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cyberantics.Ruxpunk-Story-EditorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ruxpunk Story Editor.app/Contents/MacOS/Ruxpunk Story Editor";
-			};
-			name = Debug;
-		};
-		895CBF5E21DC7E4000A95F1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B78Q78C8RK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Ruxpunk Story EditorTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cyberantics.Ruxpunk-Story-EditorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ruxpunk Story Editor.app/Contents/MacOS/Ruxpunk Story Editor";
-			};
-			name = Release;
-		};
-		895CBF6021DC7E4000A95F1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B78Q78C8RK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Ruxpunk Story EditorUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cyberantics.Ruxpunk-Story-EditorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Ruxpunk Story Editor";
-			};
-			name = Debug;
-		};
-		895CBF6121DC7E4000A95F1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B78Q78C8RK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Ruxpunk Story EditorUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cyberantics.Ruxpunk-Story-EditorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Ruxpunk Story Editor";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -623,25 +393,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		895CBF5C21DC7E4000A95F1B /* Build configuration list for PBXNativeTarget "Ruxpunk Story EditorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				895CBF5D21DC7E4000A95F1B /* Debug */,
-				895CBF5E21DC7E4000A95F1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		895CBF5F21DC7E4000A95F1B /* Build configuration list for PBXNativeTarget "Ruxpunk Story EditorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				895CBF6021DC7E4000A95F1B /* Debug */,
-				895CBF6121DC7E4000A95F1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89AK000000000001 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		89AK000000000002 /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89AK000100000001 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89AK000000000001 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		89AK000100000002 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89AK000000000002 /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 895CBF2921DC7E3F00A95F1B /* Project object */;
 }

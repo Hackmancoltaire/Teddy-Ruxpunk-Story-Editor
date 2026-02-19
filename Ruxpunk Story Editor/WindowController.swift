@@ -14,11 +14,13 @@ class WindowController: NSWindowController {
 		super.init(coder: coder)
 		shouldCascadeWindows = true
 	}
-	
+
     override func windowDidLoad() {
         super.windowDidLoad()
-    
-        // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+
+        guard let window = window else { return }
+        window.setContentSize(NSSize(width: 960, height: 600))
+        window.minSize = NSSize(width: 640, height: 500)
     }
 
 }

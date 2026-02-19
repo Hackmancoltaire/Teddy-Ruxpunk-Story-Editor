@@ -12,8 +12,95 @@ import AudioKit
 import AudioKitEX
 import SceneKit
 
+struct DecodedFrame {
+	let eyePosition: Int
+	let topMouthPosition: Int
+	let bottomMouthPosition: Int
+	let grubbyEyePosition: Int
+	let grubbyTopMouthPosition: Int
+	let grubbyBottomMouthPosition: Int
+}
+
 open class CustomTap {
 	let bufferSize: UInt32 = 1_024
+	var onFrameDecoded: ((DecodedFrame) -> Void)?
+
+	/// Offline analysis: reads the right channel of a stereo file and decodes all animation frames.
+	static func analyzeFile(_ file: AVAudioFile) -> [(samplePosition: Int, frame: DecodedFrame)] {
+		let totalFrames = Int(file.length)
+		let format = file.processingFormat
+		NSLog("[analyzeFile] totalFrames=%d, channels=%d, sampleRate=%.0f, interleaved=%d", totalFrames, format.channelCount, format.sampleRate, format.isInterleaved ? 1 : 0)
+		guard format.channelCount >= 2 else {
+			NSLog("[analyzeFile] Mono file - returning empty")
+			return []
+		}
+
+		let chunkSize: AVAudioFrameCount = 8192
+		guard let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: chunkSize) else { return [] }
+
+		file.framePosition = 0
+
+		let pulseReset = 130
+		var framePulse = 0
+		var pulseDistances = Array(repeating: 0, count: 10)
+		var pulse = 0
+		var globalSampleIndex = 0
+		var results: [(samplePosition: Int, frame: DecodedFrame)] = []
+
+		while file.framePosition < file.length {
+			buffer.frameLength = 0
+			do { try file.read(into: buffer, frameCount: chunkSize) } catch { break }
+
+			let n = Int(buffer.frameLength)
+			guard n > 0, let channels = buffer.floatChannelData else { break }
+
+			let rightChannel = channels[1] // channel 1 = right
+
+			for i in 0..<n {
+				let current = rightChannel[i]
+
+				if current < 0 {
+					if framePulse == 0 {
+						pulse += 1
+					}
+					framePulse += 1
+
+					if framePulse == pulseReset {
+						let eyePosition = Int(Rescale(from: (42,62), to: (0,90)).rescale(Double(pulseDistances[2]))).clamped(to: 0...90)
+						let grubbyEyePosition = Int(Rescale(from: (42,62), to: (0,90)).rescale(Double(pulseDistances[6]))).clamped(to: 0...90)
+						let topMouthPosition = Int(Rescale(from: (50,73), to: (0,45)).rescale(Double(pulseDistances[3]))).clamped(to: 0...45)
+						let bottomMouthPosition = Int(Rescale(from: (45,65), to: (0,45)).rescale(Double(pulseDistances[4]))).clamped(to: 0...45)
+						let grubbyTopMouthPosition = Int(Rescale(from: (50,73), to: (0,45)).rescale(Double(pulseDistances[7]))).clamped(to: 0...45)
+						let grubbyBottomMouthPosition = Int(Rescale(from: (45,65), to: (0,45)).rescale(Double(pulseDistances[8]))).clamped(to: 0...45)
+
+						results.append((
+							samplePosition: globalSampleIndex + i,
+							frame: DecodedFrame(
+								eyePosition: eyePosition,
+								topMouthPosition: topMouthPosition,
+								bottomMouthPosition: bottomMouthPosition,
+								grubbyEyePosition: grubbyEyePosition,
+								grubbyTopMouthPosition: grubbyTopMouthPosition,
+								grubbyBottomMouthPosition: grubbyBottomMouthPosition
+							)
+						))
+
+						framePulse = 0
+						pulse = 0
+						pulseDistances = Array(repeating: 0, count: 10)
+					}
+				} else {
+					framePulse = 0
+					if pulse < 10 {
+						pulseDistances[pulse] += 1
+					}
+				}
+			}
+			globalSampleIndex += n
+		}
+
+		return results
+	}
 
 	public init(_ input: Node?, face: SCNView) {
 
@@ -78,7 +165,14 @@ open class CustomTap {
 						grubbyTopMouthPosition = Int(Rescale( from: (50,73), to: (0, 45)).rescale(Double(pulseDistances[7]))).clamped(to: 0...45)
 						grubbyBottomMouthPosition = Int(Rescale( from: (45,65), to: (0, 45)).rescale(Double(pulseDistances[8]))).clamped(to: 0...45)
 
-						// print(pulseDistances)
+						self.onFrameDecoded?(DecodedFrame(
+							eyePosition: eyePosition,
+							topMouthPosition: topMouthPosition,
+							bottomMouthPosition: bottomMouthPosition,
+							grubbyEyePosition: grubbyEyePosition,
+							grubbyTopMouthPosition: grubbyTopMouthPosition,
+							grubbyBottomMouthPosition: grubbyBottomMouthPosition
+						))
 
 						// Reset all these temporary values for the next frame
 						framePulse = 0

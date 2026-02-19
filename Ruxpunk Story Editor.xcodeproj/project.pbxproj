@@ -17,6 +17,7 @@
 		89CA1EA921DF192C00A9C205 /* TeddyEye.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CA1EA821DF192C00A9C205 /* TeddyEye.png */; };
 		89CA1EAB21DF445400A9C205 /* CustomTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CA1EAA21DF445400A9C205 /* CustomTap.swift */; };
 		89WF000021DF500000000001 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89WF000021DF500000000002 /* WaveformView.swift */; };
+		89PW000021DF600000000001 /* ParameterWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89PW000021DF600000000002 /* ParameterWaveformView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		89CA1EA821DF192C00A9C205 /* TeddyEye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TeddyEye.png; sourceTree = "<group>"; };
 		89CA1EAA21DF445400A9C205 /* CustomTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTap.swift; sourceTree = "<group>"; };
 		89WF000021DF500000000002 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		89PW000021DF600000000002 /* ParameterWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterWaveformView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				895CBF3C21DC7E4000A95F1B /* Main.storyboard */,
 				89CA1EAA21DF445400A9C205 /* CustomTap.swift */,
 				89WF000021DF500000000002 /* WaveformView.swift */,
+				89PW000021DF600000000002 /* ParameterWaveformView.swift */,
 				895CBF3F21DC7E4000A95F1B /* Info.plist */,
 				895CBF4021DC7E4000A95F1B /* Ruxpunk_Story_Editor.entitlements */,
 				89CA1EA821DF192C00A9C205 /* TeddyEye.png */,
@@ -196,6 +199,7 @@
 				895CBF3521DC7E3F00A95F1B /* AppDelegate.swift in Sources */,
 				895CBF3921DC7E3F00A95F1B /* Document.swift in Sources */,
 				89WF000021DF500000000001 /* WaveformView.swift in Sources */,
+				89PW000021DF600000000001 /* ParameterWaveformView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
